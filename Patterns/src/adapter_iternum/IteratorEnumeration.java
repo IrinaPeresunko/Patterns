@@ -2,10 +2,10 @@ package adapter_iternum;
 
 import java.util.*;
 
-public class IteratorEnumeration implements Enumeration {
-	Iterator iterator;
+public class IteratorEnumeration implements Enumeration<Object> {
+	Iterator<?> iterator;
  
-	public IteratorEnumeration(Iterator iterator) {
+	public IteratorEnumeration(Iterator<?> iterator) {
 		this.iterator = iterator;
 	}
  
